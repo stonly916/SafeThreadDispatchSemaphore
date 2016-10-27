@@ -9,6 +9,8 @@ use dispatch_semaphore_t for thread safety
   [[STONLYThreadSemaphore shareInstance] semaphoreUNLock:semString];
 </code></pre>
 # how to use
+ just use: ST_SEMAPHORE_LOCK(semString, <strong>...</strong> )   
+ different lock use different semString
 <pre><code>
 dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
 dispatch_group_t group = dispatch_group_create();
